@@ -1,5 +1,6 @@
 package com.example.media;
 import android.content.Context;
+import android.net.Uri;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -14,8 +15,8 @@ public class PlayActivityMVP {
     public void setVideoViewInVideo(VideoView videoView, String uri) {
 
         if (videoView != null && uri != null) {
-            videoView.setVideoPath(uri);
-            //        videoView.requestFocus();
+            //videoView.setVideoPath(uri);
+            videoView.setVideoURI(Uri.parse(uri));
             MediaController mediaController = new MediaController(context);
             mediaController.setAnchorView(videoView);
             videoView.setMediaController(mediaController);
