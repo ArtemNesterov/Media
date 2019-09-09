@@ -4,7 +4,6 @@ import android.net.Uri;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-
 public class PlayActivityMVP {
    private Context context;
 
@@ -23,6 +22,5 @@ public class PlayActivityMVP {
             videoView.start();
         }
     }
-
 
 }
